@@ -198,7 +198,7 @@ func (m *MTProto) read(stop <-chan struct{}) (interface{}, error) {
 	}
 	mod := m.msgId & 3
 	if mod != 1 && mod != 3 {
-		return nil, fmt.Errorf("Wrong bits of message_id: %d", mod)
+		return nil, fmt.Errorf("wrong bits of message_id: %d", mod)
 	}
 
 	if __debug&DEBUG_LEVEL_NETWORK != 0 {

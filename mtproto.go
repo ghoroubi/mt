@@ -20,8 +20,8 @@ const (
 	reservedDCAddress           = "149.154.167.50:443"
 )
 const (
-	appId   = 48759
-	appHash = "1bf5da60fb0b46195dec5a271049a959"
+	appId   = 48841
+	appHash = "3151c01673d412c18c055f089128be50"
 )
 
 var (
