@@ -264,7 +264,7 @@ func (m *MTProto) sendRoutine() {
 		err := m.sendPacket(x.msg, x.resp)
 		if err != nil {
 			fmt.Println("SendRoutine:", err)
-			os.Exit(2)
+			return
 		}
 	}
 	//m.allDone <- struct{}{}
@@ -275,7 +275,7 @@ func (m *MTProto) readRoutine() {
 		data, err := m.read(m.stopRead)
 		if err != nil {
 			fmt.Println("ReadRoutine:", err)
-			os.Exit(2)
+return
 		}
 		if data == nil {
 			//m.allDone <- struct{}{}
